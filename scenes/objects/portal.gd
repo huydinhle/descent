@@ -55,4 +55,3 @@ func spawn_teleport_effect(effect_position: Vector2) -> void:
 		var particles = load("res://scenes/objects/teleport.tscn").instantiate()
 		particles.position = effect_position
 		Global.world.add_child(particles)
-

@@ -1,6 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://portal_scene_001"]
+[gd_scene load_steps=3 format=3 uid="uid://dgltmdeipuagq"]
 
-[ext_resource type="Script" path="res://scenes/objects/portal.gd" id="1_portal"]
+[ext_resource type="Script" uid="uid://dfv0dlcy33hx4" path="res://scenes/objects/portal.gd" id="1_portal"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_portal"]
 size = Vector2(32, 64)
@@ -12,14 +12,15 @@ script = ExtResource("1_portal")
 shape = SubResource("RectangleShape2D_portal")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-offset = Vector2(-16, -32)
-size = Vector2(32, 64)
+offset_left = -15.0
+offset_top = -33.0
+offset_right = 17.0
+offset_bottom = 31.0
 color = Color(0.2, 0.6, 1, 0.7)
 
 [node name="Label" type="Label" parent="."]
-offset = Vector2(-20, -10)
-size = Vector2(40, 20)
+offset_right = 40.0
+offset_bottom = 23.0
 text = "PORTAL"
 horizontal_alignment = 1
 vertical_alignment = 1
-
