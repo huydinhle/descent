@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bxoarvmt6trid"]
 
 [ext_resource type="Script" uid="uid://bqpu0j5iaswyb" path="res://scenes/objects/knife.gd" id="1_aveho"]
-[ext_resource type="Script" path="res://scenes/objects/line2D.gd" id="1_f5ndg"]
+[ext_resource type="Script" uid="uid://cve7vttbiqbvh" path="res://scenes/objects/line2D.gd" id="1_f5ndg"]
 [ext_resource type="Texture2D" uid="uid://talr76qpxbwl" path="res://assets/textures/knife.png" id="1_o8713"]
 
 [sub_resource type="Curve" id="Curve_aveho"]
@@ -15,6 +15,7 @@ colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 0.607843)
 size = Vector2(12, 2)
 
 [node name="Area2D" type="Area2D"]
+collision_mask = 3
 script = ExtResource("1_aveho")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
